@@ -1,0 +1,772 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dia Khan — Full-Stack Developer</title>
+    <meta
+      name="description"
+      content="Dia Khan — Junior Full-Stack Developer building AI-powered web applications with Python, FastAPI, React, Next.js and PostgreSQL. Based in Multan, Pakistan."
+    />
+    <meta property="og:title" content="Dia Khan — Full-Stack Developer" />
+    <meta property="og:description" content="Junior Full-Stack Developer | AI-Powered Web Applications" />
+    <meta property="og:image" content="/dia-khan.jpg" />
+    <meta name="theme-color" content="#f6f1e7" />
+    <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
+    <link rel="icon" href="/favicon-192.png" type="image/png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- ============ MENU (smaller screens) ============ -->
+    <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span>
+    </button>
+    <nav class="nav__links" id="navLinks" aria-label="Primary">
+      <a href="#top">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact" class="nav__cta">Contact</a>
+    </nav>
+
+    <!-- ============ SIDE NAV (wide screens) ============ -->
+    <nav class="sidenav" id="sidenav" aria-label="Section navigation">
+      <a href="#top" class="is-active">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z" /></svg>
+        <span>Home</span>
+      </a>
+      <a href="#about">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4" /><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7" /></svg>
+        <span>About</span>
+      </a>
+      <a href="#skills">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16" /></svg>
+        <span>Skills</span>
+      </a>
+      <a href="#experience">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2" /><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18" /></svg>
+        <span>Experience</span>
+      </a>
+      <a href="#projects">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /></svg>
+        <span>Projects</span>
+      </a>
+      <a href="#education">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5L2 9z" /><path d="M6 11v5c3 2 9 2 12 0v-5" /></svg>
+        <span>Education</span>
+      </a>
+      <a href="#contact">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="M3 7l9 6 9-6" /></svg>
+        <span>Contact</span>
+      </a>
+    </nav>
+
+    <main id="main">
+      <!-- ============ HERO ============ -->
+      <section class="hero" id="top">
+        <div class="hero__bg" aria-hidden="true">
+          <span class="blob blob--sage"></span>
+          <span class="blob blob--mauve"></span>
+          <span class="blob blob--sand"></span>
+        </div>
+
+        <div class="container hero__inner">
+          <div class="portrait reveal">
+            <div class="portrait__orbit" aria-hidden="true">
+              <span class="portrait__planet portrait__planet--a"></span>
+              <span class="portrait__planet portrait__planet--b"></span>
+            </div>
+            <div class="portrait__halo" aria-hidden="true"></div>
+            <div class="portrait__ring" aria-hidden="true"></div>
+            <div class="portrait__frame">
+              <img src="/dia-khan.jpg" alt="Portrait of Dia Khan" width="1024" height="1536" fetchpriority="high" />
+            </div>
+          </div>
+
+          <h1 class="hero__name reveal">Dia Khan</h1>
+
+          <p class="hero__typed reveal">
+            <span class="typed" aria-hidden="true"><em id="typed">Full-Stack Developer</em><span class="typed__caret"></span></span>
+            <span class="sr-only">Full-Stack Developer, AI-Powered Web Applications, Generative AI, RAG &amp; LLM Applications, FastAPI &amp; REST APIs, React &amp; Next.js</span>
+          </p>
+
+          <ul class="socials socials--hero reveal" aria-label="Social links">
+              <li><a href="https://github.com/khandia017-maker" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><svg viewBox="0 0 24 24" aria-hidden="true" class="ico-fill"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.26 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg></a></li>
+              <li><a href="https://www.linkedin.com/in/dia-khan-187209429" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><svg viewBox="0 0 24 24" aria-hidden="true" class="ico-fill"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a></li>
+              <li><a href="mailto:khandia017@gmail.com" aria-label="Email Dia Khan"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="M3 7l9 6 9-6" /></svg></a></li>
+            </ul>
+
+          <div class="hero__actions reveal">
+            <a href="#projects" class="btn btn--primary">
+              View my work
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+            </a>
+            <a href="/Dia-Khan-CV.pdf" download="Dia-Khan-CV.pdf" class="btn btn--ghost">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14" /></svg>
+              Download CV
+            </a>
+          </div>
+        </div>
+
+        <a href="#about" class="scroll-cue" aria-label="Scroll to About">
+          <span></span>
+        </a>
+      </section>
+
+      <!-- ============ ABOUT ============ -->
+      <section class="section" id="about">
+        <div class="container about">
+          <div class="section-head reveal">
+            <p class="section-head__kicker">01 — About</p>
+            <h2 class="section-head__title">Building software that is <em>useful</em>, reliable and shipped.</h2>
+          </div>
+
+          <div class="about__grid">
+            <div class="about__text reveal">
+              <p>
+                I'm a Full-Stack Developer with hands-on experience building, integrating and deploying full-stack and
+                AI-powered applications in real-world projects.
+              </p>
+              <p>
+                I develop scalable backend services and REST APIs using <strong>Python</strong> and
+                <strong>FastAPI</strong>, build responsive web applications with <strong>React</strong> and
+                <strong>Next.js</strong>, and work with <strong>TypeScript</strong> and <strong>PostgreSQL</strong>. My
+                experience spans role-based multi-tenant systems, API integrations, RAG-based LLM applications and
+                AI-driven solutions.
+              </p>
+              <p>
+                I've deployed applications to <strong>AWS EC2</strong> and set up CI/CD workflows with
+                <strong>GitHub Actions</strong>, which gives me an end-to-end view of the work, from development and
+                integration through testing and deployment.
+              </p>
+            </div>
+
+            <ul class="stats reveal" aria-label="Highlights">
+              <li class="stat">
+                <span class="stat__num">3.8</span>
+                <span class="stat__label">CGPA out of 4.0<br />BS Information Technology</span>
+              </li>
+              <li class="stat">
+                <span class="stat__num">3</span>
+                <span class="stat__label">Real-world projects<br />2 for clients, 1 final-year project</span>
+              </li>
+              <li class="stat">
+                <span class="stat__num">6</span>
+                <span class="stat__label">User roles handled with<br />RBAC on a SaaS platform</span>
+              </li>
+              <li class="stat">
+                <span class="stat__num stat__num--text">E2E</span>
+                <span class="stat__label">Build · integrate · test<br />· deploy to production</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ TOOLS ============ -->
+      <section class="tools" aria-labelledby="toolsTitle">
+        <div class="container">
+          <h2 class="tools__title reveal" id="toolsTitle">Tools I work with</h2>
+          <div class="marquee reveal">
+          <ul class="marquee__track" id="toolsTrack">
+            <li><img src="/icons/python.svg" alt="" width="40" height="40" /><span>Python</span></li>
+            <li><img src="/icons/javascript.svg" alt="" width="40" height="40" /><span>JavaScript</span></li>
+            <li><img src="/icons/typescript.svg" alt="" width="40" height="40" /><span>TypeScript</span></li>
+            <li><img src="/icons/react.svg" alt="" width="40" height="40" /><span>React</span></li>
+            <li><img src="/icons/nextjs.svg" alt="" width="40" height="40" /><span>Next.js</span></li>
+            <li><img src="/icons/tailwindcss.svg" alt="" width="40" height="40" /><span>Tailwind CSS</span></li>
+            <li><img src="/icons/vitejs.svg" alt="" width="40" height="40" /><span>Vite</span></li>
+            <li><img src="/icons/fastapi.svg" alt="" width="40" height="40" /><span>FastAPI</span></li>
+            <li><img src="/icons/nodejs.svg" alt="" width="40" height="40" /><span>Node.js</span></li>
+            <li><img src="/icons/express.svg" alt="" width="40" height="40" /><span>Express.js</span></li>
+            <li><img src="/icons/socketio.svg" alt="" width="40" height="40" /><span>Socket.IO</span></li>
+            <li><img src="/icons/laravel.svg" alt="" width="40" height="40" /><span>Laravel</span></li>
+            <li><img src="/icons/php.svg" alt="" width="40" height="40" /><span>PHP</span></li>
+            <li><img src="/icons/postgresql.svg" alt="" width="40" height="40" /><span>PostgreSQL</span></li>
+            <li><img src="/icons/mongodb.svg" alt="" width="40" height="40" /><span>MongoDB</span></li>
+            <li><img src="/icons/redis.svg" alt="" width="40" height="40" /><span>Redis</span></li>
+            <li><img src="/icons/prisma.svg" alt="" width="40" height="40" /><span>Prisma</span></li>
+            <li><img src="/icons/docker.svg" alt="" width="40" height="40" /><span>Docker</span></li>
+            <li><img src="/icons/githubactions.svg" alt="" width="40" height="40" /><span>GitHub Actions</span></li>
+            <li><img src="/icons/amazonwebservices.svg" alt="" width="40" height="40" /><span>AWS EC2</span></li>
+            <li><img src="/icons/git.svg" alt="" width="40" height="40" /><span>Git</span></li>
+            <li><img src="/icons/github.svg" alt="" width="40" height="40" /><span>GitHub</span></li>
+            <li><img src="/icons/opencv.svg" alt="" width="40" height="40" /><span>OpenCV</span></li>
+            <li><img src="/icons/vitest.svg" alt="" width="40" height="40" /><span>Vitest</span></li>
+            <li><img src="/icons/playwright.svg" alt="" width="40" height="40" /><span>Playwright</span></li>
+          </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SKILLS ============ -->
+      <section class="section section--tint" id="skills">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="section-head__kicker">02 — Skills</p>
+            <h2 class="section-head__title">A toolkit for the <em>whole</em> stack.</h2>
+          </div>
+
+          <div class="skills">
+            <article class="skill-card reveal">
+              <div class="skill-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16" /></svg>
+              </div>
+              <h3>Languages</h3>
+              <ul class="tags">
+                <li class="tag tag--key">Python</li>
+                <li class="tag tag--key">JavaScript</li>
+                <li class="tag tag--key">TypeScript</li>
+                <li class="tag">PHP</li>
+                <li class="tag">SQL</li>
+                <li class="tag">HTML5</li>
+                <li class="tag">CSS3</li>
+              </ul>
+            </article>
+
+            <article class="skill-card reveal">
+              <div class="skill-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2" /><path d="M3 8h18M8 21h8" /></svg>
+              </div>
+              <h3>Frontend</h3>
+              <ul class="tags">
+                <li class="tag tag--key">React</li>
+                <li class="tag tag--key">Next.js</li>
+                <li class="tag">Responsive Web Design</li>
+                <li class="tag">UI Development</li>
+                <li class="tag">Tailwind CSS</li>
+                <li class="tag">Vite</li>
+              </ul>
+            </article>
+
+            <article class="skill-card reveal">
+              <div class="skill-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="6" rx="1.5" /><rect x="3" y="14" width="18" height="6" rx="1.5" /><path d="M7 7h.01M7 17h.01" /></svg>
+              </div>
+              <h3>Backend &amp; APIs</h3>
+              <ul class="tags">
+                <li class="tag tag--key">FastAPI</li>
+                <li class="tag tag--key">Node.js</li>
+                <li class="tag tag--key">REST APIs</li>
+                <li class="tag">Express.js</li>
+                <li class="tag">Laravel</li>
+                <li class="tag">API Integration</li>
+                <li class="tag">Authentication</li>
+                <li class="tag">RBAC</li>
+                <li class="tag">Celery</li>
+                <li class="tag">Redis</li>
+                <li class="tag">Socket.IO</li>
+              </ul>
+            </article>
+
+            <article class="skill-card reveal">
+              <div class="skill-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><ellipse cx="12" cy="5.5" rx="8" ry="2.5" /><path d="M4 5.5v13c0 1.4 3.6 2.5 8 2.5s8-1.1 8-2.5v-13M4 12c0 1.4 3.6 2.5 8 2.5s8-1.1 8-2.5" /></svg>
+              </div>
+              <h3>Databases</h3>
+              <ul class="tags">
+                <li class="tag tag--key">PostgreSQL</li>
+                <li class="tag tag--key">MongoDB</li>
+                <li class="tag">Database Design</li>
+                <li class="tag">Relationships &amp; Queries</li>
+                <li class="tag">Prisma</li>
+              </ul>
+            </article>
+
+            <article class="skill-card skill-card--feature reveal">
+              <div class="skill-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 3l1.8 4.7L18.5 9.5l-4.7 1.8L12 16l-1.8-4.7L5.5 9.5l4.7-1.8L12 3zM19 15l.9 2.1L22 18l-2.1.9L19 21l-.9-2.1L16 18l2.1-.9L19 15z" /></svg>
+              </div>
+              <h3>AI Engineering</h3>
+              <ul class="tags">
+                <li class="tag tag--key">Generative AI</li>
+                <li class="tag tag--key">RAG</li>
+                <li class="tag tag--key">LLM Applications</li>
+                <li class="tag">Prompt Engineering</li>
+                <li class="tag">Computer Vision</li>
+              </ul>
+            </article>
+
+            <article class="skill-card reveal">
+              <div class="skill-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4 2.5-2.5z" /></svg>
+              </div>
+              <h3>Tools &amp; DevOps</h3>
+              <ul class="tags">
+                <li class="tag tag--key">Docker</li>
+                <li class="tag tag--key">GitHub Actions</li>
+                <li class="tag tag--key">AWS EC2</li>
+                <li class="tag">CI/CD</li>
+                <li class="tag">Git</li>
+                <li class="tag">GitHub</li>
+                <li class="tag">Cursor</li>
+                <li class="tag">Vitest</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ EXPERIENCE ============ -->
+      <section class="section" id="experience">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="section-head__kicker">03 — Experience</p>
+            <h2 class="section-head__title">Where I've been <em>building</em>.</h2>
+          </div>
+
+          <ol class="timeline">
+            <li class="timeline__item reveal">
+              <span class="timeline__dot timeline__dot--live" aria-hidden="true"></span>
+              <div class="timeline__card">
+                <div class="timeline__top">
+                  <div>
+                    <h3>Junior Full-Stack Developer</h3>
+                    <p class="timeline__org">TechTix</p>
+                  </div>
+                  <span class="badge badge--live">September 2026 – Present</span>
+                </div>
+                <ul class="bullets">
+                  <li>Working on full-stack software development projects involving frontend, backend, and AI technologies.</li>
+                  <li>Contributing to application development, integration, testing, and deployment.</li>
+                  <li>Collaborating with the development team and applying modern software development practices.</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="timeline__item reveal">
+              <span class="timeline__dot" aria-hidden="true"></span>
+              <div class="timeline__card">
+                <div class="timeline__top">
+                  <div>
+                    <h3>Junior Full-Stack Developer Intern</h3>
+                    <p class="timeline__org">TechTix</p>
+                  </div>
+                  <span class="badge">June 2026 – September 2026 · 3 months</span>
+                </div>
+                <ul class="bullets">
+                  <li>
+                    Contributed to software development projects involving frontend, backend, AI technologies, and
+                    end-to-end application development and deployment.
+                  </li>
+                  <li>Worked as part of a development team while applying modern software development practices.</li>
+                  <li>
+                    Demonstrated effective communication, teamwork, professionalism, and the ability to quickly learn and
+                    apply modern development practices.
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ============ PROJECTS ============ -->
+      <section class="section section--tint" id="projects">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="section-head__kicker">04 — Projects</p>
+            <h2 class="section-head__title">Selected <em>work</em>.</h2>
+            <p class="section-head__sub">
+              Work from my role at TechTix, freelance client projects and university. The client codebases are
+              private, so there are no public repository or demo links for them.
+            </p>
+          </div>
+
+          <div class="iboxes">
+            <article class="ibox ibox--sage reveal">
+              <div class="ibox__icon">
+                <svg class="ibox__blob" viewBox="0 0 600 600" aria-hidden="true"><path d="M300 571c84 4 152-58 205-122 54-66 112-148 83-228-28-75-132-70-205-103C313 87 250 7 181 39 112 71 121 169 110 245c-9 64-17 128 16 183 40 69 96 139 174 143z"/></svg>
+                <svg class="ibox__glyph" viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 3.5l6 6-3 3-6-6z" /><path d="M13 11l-8.5 8.5" /><path d="M3 21h9" /></svg>
+              </div>
+              <p class="ibox__meta"><span>TechTix</span> · Auction marketplace</p>
+              <h3 class="ibox__title">Zawwed: Auction Marketplace Admin Platform</h3>
+              <p class="ibox__desc">A bilingual (English/Arabic) admin console and the REST API behind it for a Libyan online auction marketplace with live bidding, online or cash-on-delivery payments and courier shipping.</p>
+              <ul class="tags tags--sm ibox__tags" aria-label="Key technologies"><li class="tag">React 19</li><li class="tag">TypeScript</li><li class="tag">Node.js</li><li class="tag">PostgreSQL</li><li class="tag">Socket.IO</li></ul>
+              <button type="button" class="ibox__more" data-dialog="dlg-zawwed">
+                Learn more <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+              </button>
+            </article>
+            <article class="ibox ibox--mauve reveal">
+              <div class="ibox__icon">
+                <svg class="ibox__blob" viewBox="0 0 600 600" aria-hidden="true"><path d="M300 571c84 4 152-58 205-122 54-66 112-148 83-228-28-75-132-70-205-103C313 87 250 7 181 39 112 71 121 169 110 245c-9 64-17 128 16 183 40 69 96 139 174 143z"/></svg>
+                <svg class="ibox__glyph" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 7v10M3.5 9.5v5M17.5 7v10M20.5 9.5v5M6.5 12h11" /></svg>
+              </div>
+              <p class="ibox__meta"><span>TechTix</span> · BJJ training platform</p>
+              <h3 class="ibox__title">Bulletproof BJJ: Node.js Backend &amp; APIs</h3>
+              <p class="ibox__desc">A scalable Node.js backend for a Brazilian Jiu-Jitsu training platform, powering iOS/Android apps, a website/store and an admin CMS.</p>
+              <ul class="tags tags--sm ibox__tags" aria-label="Key technologies"><li class="tag">Node.js</li><li class="tag">MongoDB</li><li class="tag">REST APIs</li><li class="tag">Amazon S3</li><li class="tag">Google Cloud Run</li></ul>
+              <button type="button" class="ibox__more" data-dialog="dlg-bjj">
+                Learn more <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+              </button>
+            </article>
+            <article class="ibox ibox--sand reveal">
+              <div class="ibox__icon">
+                <svg class="ibox__blob" viewBox="0 0 600 600" aria-hidden="true"><path d="M300 571c84 4 152-58 205-122 54-66 112-148 83-228-28-75-132-70-205-103C313 87 250 7 181 39 112 71 121 169 110 245c-9 64-17 128 16 183 40 69 96 139 174 143z"/></svg>
+                <svg class="ibox__glyph" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z" /><path d="M8 9h8M8 12h5" /></svg>
+              </div>
+              <p class="ibox__meta"><span>Client Project</span> · Medical company</p>
+              <h3 class="ibox__title">RAG-Based AI Chatbot</h3>
+              <p class="ibox__desc">An AI chatbot that lets staff query company knowledge in natural language, grounded in retrieved internal documents.</p>
+              <ul class="tags tags--sm ibox__tags" aria-label="Technologies"><li class="tag">FastAPI</li><li class="tag">React</li><li class="tag">RAG</li><li class="tag">AWS EC2</li><li class="tag">GitHub Actions</li></ul>
+              <button type="button" class="ibox__more" data-dialog="dlg-rag">
+                Learn more <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+              </button>
+            </article>
+            <article class="ibox ibox--moss reveal">
+              <div class="ibox__icon">
+                <svg class="ibox__blob" viewBox="0 0 600 600" aria-hidden="true"><path d="M300 571c84 4 152-58 205-122 54-66 112-148 83-228-28-75-132-70-205-103C313 87 250 7 181 39 112 71 121 169 110 245c-9 64-17 128 16 183 40 69 96 139 174 143z"/></svg>
+                <svg class="ibox__glyph" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2" /><path d="M3 9h18M8 14h3M8 17h6M15 14h1" /></svg>
+              </div>
+              <p class="ibox__meta"><span>Client Project</span> · Multi-tenant SaaS</p>
+              <h3 class="ibox__title">Mortgage &amp; Loan Management SaaS Platform</h3>
+              <p class="ibox__desc">Features for a multi-tenant SaaS platform handling complex loan workflows across six user roles.</p>
+              <ul class="tags tags--sm ibox__tags" aria-label="Technologies"><li class="tag">FastAPI</li><li class="tag">Next.js</li><li class="tag">TypeScript</li><li class="tag">PostgreSQL</li></ul>
+              <button type="button" class="ibox__more" data-dialog="dlg-saas">
+                Learn more <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+              </button>
+            </article>
+            <article class="ibox ibox--sage reveal">
+              <div class="ibox__icon">
+                <svg class="ibox__blob" viewBox="0 0 600 600" aria-hidden="true"><path d="M300 571c84 4 152-58 205-122 54-66 112-148 83-228-28-75-132-70-205-103C313 87 250 7 181 39 112 71 121 169 110 245c-9 64-17 128 16 183 40 69 96 139 174 143z"/></svg>
+                <svg class="ibox__glyph" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M8 21H5a2 2 0 0 1-2-2v-3M16 21h3a2 2 0 0 0 2-2v-3" /><circle cx="12" cy="11" r="4" /><path d="M10.5 12.5q1.5 1 3 0" /></svg>
+              </div>
+              <p class="ibox__meta"><span>Final Year Project</span> · Computer vision</p>
+              <h3 class="ibox__title">AI Facial Recognition Access Control System</h3>
+              <p class="ibox__desc">A real-time facial recognition system that captures, processes and verifies faces to grant or deny physical access.</p>
+              <ul class="tags tags--sm ibox__tags" aria-label="Technologies"><li class="tag">Python</li><li class="tag">OpenCV</li><li class="tag">Machine Learning</li></ul>
+              <button type="button" class="ibox__more" data-dialog="dlg-face">
+                Learn more <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+              </button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ EDUCATION ============ -->
+      <section class="section" id="education">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="section-head__kicker">05 — Education</p>
+            <h2 class="section-head__title">Foundations &amp; <em>learning</em>.</h2>
+          </div>
+
+          <div class="edu">
+            <article class="edu__main reveal">
+              <div class="edu__badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5L2 9z" /><path d="M6 11v5c3 2 9 2 12 0v-5M22 9v6" /></svg>
+              </div>
+              <p class="edu__years">2022 – 2026</p>
+              <h3>BS Information Technology</h3>
+              <p class="edu__school">Bahauddin Zakariya University, Multan</p>
+              <div class="edu__gpa">
+                <span class="edu__gpa-num">3.8</span>
+                <span class="edu__gpa-label">CGPA<br />out of 4.0</span>
+                <div class="gpa-bar" role="img" aria-label="CGPA 3.8 out of 4.0">
+                  <span style="--w: 95%"></span>
+                </div>
+              </div>
+            </article>
+
+            <div class="edu__side">
+              <article class="edu__item reveal">
+                <p class="edu__years">2020 – 2022</p>
+                <h3>Intermediate (ICS)</h3>
+                <p class="edu__score">954 marks</p>
+              </article>
+              <article class="edu__item reveal">
+                <p class="edu__years">Matriculation</p>
+                <h3>Matriculation (Science)</h3>
+                <p class="edu__score">1008 marks</p>
+              </article>
+              <article class="edu__item edu__item--lang reveal">
+                <p class="edu__years">Languages</p>
+                <ul class="lang">
+                  <li><span>English</span><em>Fluent</em></li>
+                  <li><span>Urdu</span><em>Native</em></li>
+                </ul>
+              </article>
+            </div>
+          </div>
+
+          <p class="interests reveal">
+            <span>Outside work:</span> building side projects · exploring emerging AI technologies · reading technology blogs
+          </p>
+        </div>
+      </section>
+
+      <!-- ============ CONTACT ============ -->
+      <section class="section contact" id="contact">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="section-head__kicker">06 — Contact</p>
+            <h2 class="section-head__title">Have a role or a project in mind? <em>Let's talk.</em></h2>
+            <p class="section-head__sub">
+              I'm open to full-stack and AI engineering opportunities. Email is the best way to reach me.
+            </p>
+          </div>
+
+          <ul class="infos">
+            <li class="info reveal">
+              <span class="info__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="M3 7l9 6 9-6" /></svg>
+              </span>
+              <h3>Email</h3>
+              <a href="mailto:khandia017@gmail.com" class="info__link">khandia017@gmail.com</a>
+              <button type="button" class="info__action" id="copyEmail" data-email="khandia017@gmail.com">Copy email</button>
+            </li>
+            <li class="info reveal">
+              <span class="info__icon" aria-hidden="true"><svg viewBox="0 0 24 24" class="ico-fill"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.26 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg></span>
+              <h3>GitHub</h3>
+              <a href="https://github.com/khandia017-maker" target="_blank" rel="noopener noreferrer" class="info__link">khandia017-maker</a>
+            </li>
+            <li class="info reveal">
+              <span class="info__icon" aria-hidden="true"><svg viewBox="0 0 24 24" class="ico-fill"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></span>
+              <h3>LinkedIn</h3>
+              <a href="https://www.linkedin.com/in/dia-khan-187209429" target="_blank" rel="noopener noreferrer" class="info__link">dia-khan-187209429</a>
+            </li>
+            <li class="info reveal">
+              <span class="info__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 21s-7-6.1-7-11.5A7 7 0 0 1 19 9.5C19 14.9 12 21 12 21z" /><circle cx="12" cy="9.5" r="2.5" /></svg>
+              </span>
+              <h3>Location</h3>
+              <p class="info__text">Multan, Pakistan</p>
+            </li>
+            <li class="info reveal">
+              <span class="info__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2" /><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18" /></svg>
+              </span>
+              <h3>Currently</h3>
+              <p class="info__text">Junior Full-Stack Developer at TechTix</p>
+            </li>
+            <li class="info reveal">
+              <span class="info__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z" /><path d="M14 3v5h5M9 13h6M9 17h4" /></svg>
+              </span>
+              <h3>Resume</h3>
+              <a href="/Dia-Khan-CV.pdf" download="Dia-Khan-CV.pdf" class="info__link">Dia-Khan-CV.pdf</a>
+            </li>
+          </ul>
+
+          <div class="resume-cta reveal">
+            <div class="contact__glow" aria-hidden="true"></div>
+            <p class="resume-cta__text">Download my resume here</p>
+            <div class="contact__actions">
+              <a href="/Dia-Khan-CV.pdf" download="Dia-Khan-CV.pdf" class="btn btn--primary btn--lg">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14" /></svg>
+                Download CV
+              </a>
+              <a href="mailto:khandia017@gmail.com" class="btn btn--ghost btn--lg">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="M3 7l9 6 9-6" /></svg>
+                Send an email
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <a href="#top" class="brand" aria-label="Back to top">
+          <span class="brand__mark">dk</span>
+          <span class="brand__name">Dia Khan</span>
+        </a>
+        <p class="footer__tag">Junior Full-Stack Developer · AI-Powered Web Applications</p>
+        <nav class="footer__links" aria-label="Footer">
+          <a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a>
+        </nav>
+        <ul class="socials socials--center" aria-label="Social links">
+          <li><a href="https://github.com/khandia017-maker" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><svg viewBox="0 0 24 24" aria-hidden="true" class="ico-fill"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.26 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg></a></li>
+          <li><a href="https://www.linkedin.com/in/dia-khan-187209429" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><svg viewBox="0 0 24 24" aria-hidden="true" class="ico-fill"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a></li>
+          <li><a href="mailto:khandia017@gmail.com" aria-label="Email Dia Khan"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="M3 7l9 6 9-6" /></svg></a></li>
+        </ul>
+        <p class="footer__copy">© <span id="year">2026</span> Dia Khan. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Project detail dialogs -->
+    <dialog class="pdlg project--sage" id="dlg-zawwed" aria-labelledby="dlg-zawwed-t">
+      <div class="pdlg__art" aria-hidden="true">
+        <svg viewBox="0 0 200 120" class="project__svg">
+          <rect x="16" y="12" width="150" height="96" rx="10" class="p-fill-1" />
+          <rect x="16" y="12" width="150" height="16" rx="8" class="p-fill-2" />
+          <circle cx="27" cy="20" r="2.5" class="p-dot" />
+          <circle cx="36" cy="20" r="2.5" class="p-dot" />
+          <rect x="28" y="38" width="38" height="20" rx="5" class="p-fill-2" />
+          <rect x="74" y="38" width="38" height="20" rx="5" class="p-fill-2" />
+          <path d="M32 96V84M44 96V76M56 96V80M68 96V70" class="p-line" />
+          <path d="M80 94l14-10 12 4 16-12 14 6" class="p-line" />
+          <g transform="translate(166 62) rotate(-35)">
+            <rect x="-16" y="-9" width="32" height="18" rx="4" class="p-fill-2" />
+            <path d="M0 9v30" class="p-line" />
+          </g>
+          <path d="M150 104h32" class="p-line" />
+        </svg>
+      </div>
+      <div class="pdlg__body">
+        <div class="project__meta">
+          <span class="project__type">TechTix</span>
+          <span class="project__sector">Full-stack developer · Auction marketplace</span>
+        </div>
+        <h3 class="project__title" id="dlg-zawwed-t">Zawwed: Auction Marketplace Admin Platform</h3>
+        <p class="project__desc">Zawwed is a Libyan online auction marketplace where sellers list products, buyers bid live, and orders are paid online or cash on delivery and shipped by courier. I worked on the web admin console and the backend that powers it.</p>
+
+        <h4 class="pdlg__h">Admin console (frontend)</h4>
+        <p class="project__desc">A responsive, bilingual (English/Arabic with full right-to-left support) dashboard with light and dark themes, built to the client's Figma design system. Admins can:</p>
+        <ul class="checks"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg><span>Monitor sales and KPIs on a dashboard</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg><span>Manage users, auctions and categories</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg><span>Track courier pickups, deliveries and returns</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg><span>Resolve handover disputes</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg><span>Review payments and penalties</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg><span>Export reports</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg><span>Chat with customers in real time</span></li></ul>
+
+        <h4 class="pdlg__h">Backend</h4>
+        <p class="project__desc">A Node.js and Express REST API with PostgreSQL (Prisma), Redis and Socket.IO. It integrates an SMS provider for one-time codes, a courier service for shipment tracking, an online payment gateway, push notifications and S3 media storage.</p>
+
+        <h4 class="pdlg__h">Highlights</h4>
+        <ul class="project__points"><li><strong>Two-step admin sign-in:</strong> password, then a 6-digit SMS code, with expiry countdown, resend and attempt limits.</li><li><strong>Payment breakdown chart</strong> comparing cash-on-delivery and online sales across 7-day, 30-day and yearly periods.</li><li><strong>Fixed chart dates</strong> that shifted by a day depending on the server's time zone, verified across several time zones.</li><li><strong>600+ automated UI and API tests</strong>, plus browser checks on every key screen.</li></ul>
+
+        <h4 class="pdlg__h">Tech</h4>
+        <ul class="tags tags--sm" aria-label="Technologies"><li class="tag">React 19</li><li class="tag">TypeScript</li><li class="tag">Vite</li><li class="tag">Tailwind CSS</li><li class="tag">shadcn/ui</li><li class="tag">TanStack Query</li><li class="tag">i18next</li><li class="tag">Recharts</li><li class="tag">Node.js</li><li class="tag">Express</li><li class="tag">Prisma</li><li class="tag">PostgreSQL</li><li class="tag">Redis</li><li class="tag">Socket.IO</li><li class="tag">Zod</li><li class="tag">Vitest</li><li class="tag">Playwright</li></ul>
+        <p class="project__note"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2" /><path d="M8 11V8a4 4 0 0 1 8 0v3" /></svg> Private client codebase</p>
+      </div>
+      <button type="button" class="pdlg__close" aria-label="Close details" data-close>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg>
+      </button>
+    </dialog>
+    <dialog class="pdlg project--mauve" id="dlg-bjj" aria-labelledby="dlg-bjj-t">
+      <div class="pdlg__art" aria-hidden="true">
+        <svg viewBox="0 0 200 120" class="project__svg">
+          <rect x="20" y="16" width="46" height="88" rx="9" class="p-fill-1" />
+          <rect x="28" y="28" width="30" height="8" rx="4" class="p-fill-2" />
+          <rect x="28" y="42" width="30" height="8" rx="4" class="p-fill-2" />
+          <rect x="28" y="56" width="20" height="8" rx="4" class="p-fill-2" />
+          <circle cx="43" cy="93" r="3" class="p-dot" />
+          <path d="M70 60h26" class="p-line" />
+          <rect x="100" y="30" width="80" height="22" rx="6" class="p-fill-1" />
+          <rect x="100" y="60" width="80" height="22" rx="6" class="p-fill-1" />
+          <circle cx="112" cy="41" r="3" class="p-dot" />
+          <circle cx="112" cy="71" r="3" class="p-dot" />
+          <path d="M122 41h44M122 71h30" class="p-line" />
+          <path d="M126 98v12M120 101v6M166 98v12M172 101v6M126 104h40" class="p-line" />
+        </svg>
+      </div>
+      <div class="pdlg__body">
+        <div class="project__meta">
+          <span class="project__type">TechTix</span>
+          <span class="project__sector">Backend &amp; API development · BJJ training platform</span>
+        </div>
+        <h3 class="project__title" id="dlg-bjj-t">Bulletproof BJJ: Node.js Backend &amp; API Development</h3>
+        <p class="project__desc">Developed and maintained a scalable Node.js backend for a Brazilian Jiu-Jitsu training platform, supporting iOS/Android apps, a website/store and an admin CMS.</p>
+
+        <h4 class="pdlg__h">Powers</h4>
+        <ul class="checks checks--inline"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg><span>iOS and Android apps</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg><span>Website and store</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg><span>Admin CMS</span></li></ul>
+
+        <h4 class="pdlg__h">What the backend covers</h4>
+        <ul class="checks"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg><span>Authentication</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg><span>Subscriptions and payments</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg><span>Workout tracking</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg><span>Assessments</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg><span>Notifications</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg><span>Community features</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg><span>Media on AWS S3 and CloudFront</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg><span>Deployment on Google Cloud Run</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg><span>Third-party service integrations</span></li></ul>
+
+        <h4 class="pdlg__h">Tech</h4>
+        <ul class="tags tags--sm" aria-label="Technologies"><li class="tag">Node.js</li><li class="tag">MongoDB</li><li class="tag">REST APIs</li><li class="tag">Amazon S3</li><li class="tag">AWS CloudFront</li><li class="tag">Google Cloud Run</li><li class="tag">Stripe</li><li class="tag">Third-party API Integration</li></ul>
+        <p class="project__note"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2" /><path d="M8 11V8a4 4 0 0 1 8 0v3" /></svg> Private codebase</p>
+      </div>
+      <button type="button" class="pdlg__close" aria-label="Close details" data-close>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg>
+      </button>
+    </dialog>
+    <dialog class="pdlg project--sand" id="dlg-rag" aria-labelledby="dlg-rag-t">
+      <div class="pdlg__art" aria-hidden="true">
+        <svg viewBox="0 0 200 120" class="project__svg">
+                  <rect x="22" y="18" width="104" height="26" rx="13" class="p-fill-1" />
+                  <rect x="74" y="54" width="104" height="26" rx="13" class="p-fill-2" />
+                  <rect x="22" y="90" width="72" height="18" rx="9" class="p-fill-1" />
+                  <circle cx="36" cy="31" r="4" class="p-dot" />
+                  <circle cx="164" cy="67" r="4" class="p-dot" />
+                  <path d="M44 31h66M88 67h62" class="p-line" />
+                </svg>
+      </div>
+      <div class="pdlg__body">
+        <div class="project__meta">
+          <span class="project__type">Client Project</span>
+          <span class="project__sector">Medical company</span>
+        </div>
+        <h3 class="project__title" id="dlg-rag-t">RAG-Based AI Chatbot</h3>
+        <p class="project__desc">Delivered an end-to-end AI chatbot that lets staff query company-specific knowledge in natural language, with responses grounded in retrieved internal documents.</p>
+        <ul class="project__points"><li>Built FastAPI backend services and REST APIs, a React frontend, and the retrieval pipeline connecting the LLM to the client's knowledge base.</li><li>Set up a GitHub Actions CI/CD pipeline and deployed the application to production on AWS EC2.</li></ul>
+        <ul class="tags tags--sm" aria-label="Technologies"><li class="tag">FastAPI</li><li class="tag">React</li><li class="tag">RAG</li><li class="tag">AWS EC2</li><li class="tag">GitHub Actions</li></ul>
+        <p class="project__note"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2" /><path d="M8 11V8a4 4 0 0 1 8 0v3" /></svg> Private client codebase, deployed to production</p>
+      </div>
+      <button type="button" class="pdlg__close" aria-label="Close details" data-close>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg>
+      </button>
+    </dialog>
+    <dialog class="pdlg project--moss" id="dlg-saas" aria-labelledby="dlg-saas-t">
+      <div class="pdlg__art" aria-hidden="true">
+        <svg viewBox="0 0 200 120" class="project__svg">
+                  <rect x="20" y="16" width="160" height="88" rx="10" class="p-fill-1" />
+                  <rect x="20" y="16" width="38" height="88" rx="10" class="p-fill-2" />
+                  <rect x="70" y="30" width="44" height="30" rx="6" class="p-fill-2" />
+                  <rect x="122" y="30" width="44" height="30" rx="6" class="p-fill-2" />
+                  <path d="M72 88l18-12 16 6 22-16 18 8" class="p-line" />
+                  <circle cx="30" cy="30" r="3" class="p-dot" />
+                  <circle cx="30" cy="42" r="3" class="p-dot" />
+                  <circle cx="30" cy="54" r="3" class="p-dot" />
+                </svg>
+      </div>
+      <div class="pdlg__body">
+        <div class="project__meta">
+          <span class="project__type">Client Project</span>
+          <span class="project__sector">Multi-tenant SaaS</span>
+        </div>
+        <h3 class="project__title" id="dlg-saas-t">Mortgage &amp; Loan Management SaaS Platform</h3>
+        <p class="project__desc">Developed features for a multi-tenant SaaS platform handling complex loan workflows across six user roles (Super Admin, Admin, Team Lead, Loan Officer, User, Borrower).</p>
+        <ul class="project__points"><li>Implemented role-based access control, loan management workflows, PostgreSQL-backed features and frontend–API integration across the platform.</li><li>Collaborated on “Bevri Brain”, the platform's integrated AI assistant, and its integration into the SaaS product.</li></ul>
+        <ul class="tags tags--sm" aria-label="Technologies"><li class="tag">FastAPI</li><li class="tag">Next.js</li><li class="tag">TypeScript</li><li class="tag">PostgreSQL</li></ul>
+        <p class="project__note"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2" /><path d="M8 11V8a4 4 0 0 1 8 0v3" /></svg> Private client codebase</p>
+      </div>
+      <button type="button" class="pdlg__close" aria-label="Close details" data-close>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg>
+      </button>
+    </dialog>
+    <dialog class="pdlg project--sage" id="dlg-face" aria-labelledby="dlg-face-t">
+      <div class="pdlg__art" aria-hidden="true">
+        <svg viewBox="0 0 200 120" class="project__svg">
+                  <path d="M62 22H48a8 8 0 0 0-8 8v14M138 22h14a8 8 0 0 1 8 8v14M62 98H48a8 8 0 0 1-8-8V76M138 98h14a8 8 0 0 0 8-8V76" class="p-line" />
+                  <ellipse cx="100" cy="58" rx="24" ry="30" class="p-fill-1" />
+                  <circle cx="91" cy="52" r="3" class="p-dot" />
+                  <circle cx="109" cy="52" r="3" class="p-dot" />
+                  <path d="M92 70q8 6 16 0" class="p-line" />
+                  <path d="M40 60h120" class="p-scan" />
+                </svg>
+      </div>
+      <div class="pdlg__body">
+        <div class="project__meta">
+          <span class="project__type">Final Year Project</span>
+          <span class="project__sector">Computer vision</span>
+        </div>
+        <h3 class="project__title" id="dlg-face-t">AI Facial Recognition Access Control System</h3>
+        <p class="project__desc">Built a real-time facial recognition system that captures, processes and verifies faces to grant or deny physical access.</p>
+        <ul class="project__points"><li>Applied machine learning, image processing and authentication concepts to design a secure, automated access-control workflow.</li></ul>
+        <ul class="tags tags--sm" aria-label="Technologies"><li class="tag">Python</li><li class="tag">OpenCV</li><li class="tag">Machine Learning</li></ul>
+        <p class="project__note"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5L2 9z" /><path d="M6 11v5c3 2 9 2 12 0v-5" /></svg> Final Year Project · Bahauddin Zakariya University</p>
+      </div>
+      <button type="button" class="pdlg__close" aria-label="Close details" data-close>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg>
+      </button>
+    </dialog>
+
+    <a href="#top" class="to-top" id="toTop" aria-label="Back to top">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6" /></svg>
+    </a>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
